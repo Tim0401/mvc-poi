@@ -172,7 +172,7 @@
       <server host="127.0.0.1" id="a21908f4-9b5f-410e-a37f-632bd19e8d4e" name="localhost" />
     </servers>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="26" />
     <option name="width" value="1565" />
     <option name="height" value="970" />
