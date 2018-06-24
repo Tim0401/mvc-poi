@@ -15,8 +15,6 @@ class Top extends Controller
             show_404();
         }
         $data['title'] = ucfirst($page);
-        //$this->load_view('templates/header', $data);
         $this->load_view('top/' . $page, $data);
-        //$this->load_view('templates/footer', $data);
     }
 }

@@ -6,7 +6,10 @@
  * Time: 1:33
  */
 
+// アプリケーションのパス(models,views,controllersの親フォルダ)
 define("APPPATH", dirname(__FILE__) . "/");
+// ルートパス
+define("BASEPATH", dirname(__FILE__) . "/");
 
 spl_autoload_register(
     function ($class_name)

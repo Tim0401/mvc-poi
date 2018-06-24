@@ -15,8 +15,7 @@ class Pages extends Controller
             show_404();
         }
         $data['title'] = ucfirst($page);
-        //$this->load_view('templates/header', $data);
+        $this->load_model('test',"model",TRUE);
         $this->load_view('pages/' . $page, $data);
-        //$this->load_view('templates/footer', $data);
     }
 }
