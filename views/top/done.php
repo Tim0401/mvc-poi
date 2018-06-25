@@ -3,28 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title><?php echo $title ?></title>
+    <title>index</title>
 
     <link rel="stylesheet" href="<?php echo BASEPATH ?>css/bootstrap.min.css"
           integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
 </head>
 <body>
 <div class="container">
-    <form class="col-auto" name="form1" method="post" action="<?php echo BASEPATH ?>index.php/top/view/index">
-        <div class="form-group">
-            名前：<input class="form-control" type="text" name="name" value="<?php echo h($name); ?>">
-        </div>
-        <p><?php echo $error['name'] ?></p>
-        <div class="form-group">
-            電話番号：<input class="form-control" type="text" name="tel" value="<?php echo h($tel); ?>">
-        </div>
-        <p><?php echo $error['tel'] ?></p>
-        <div class="form-group">
-            メールアドレス：<input class="form-control" type="text" name="email" value="<?php echo h($email); ?>">
-        </div>
-        <p><?php echo $error['email'] ?></p>
-        <input class="btn btn-primary btn-block" type="submit" name="confirm" value="確認">
-    </form>
+    完了。
+
+    <br/>
+
+    <table class="table" border="1">
+        <tr>
+            <th>ID</th>
+            <th>名前</th>
+            <th>電話番号</th>
+            <th>メールアドレス</th>
+        </tr>
+        <?php foreach ($data as $key => $row): ?>
+            <tr>
+                <?php foreach ($row as $value): ?>
+                    <td>
+                        <?php echo h($value); ?>
+                    </td>
+                <?php endforeach; ?>
+            </tr>
+        <?php endforeach; ?>
+    </table>
 </div>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -36,5 +43,6 @@
         crossorigin="anonymous"></script>
 <script src="<?php echo BASEPATH ?>js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
         crossorigin="anonymous"></script>
+
 </body>
 </html>

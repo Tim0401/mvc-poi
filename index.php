@@ -9,7 +9,7 @@
 // アプリケーションのパス(models,views,controllersの親フォルダ)
 define("APPPATH", dirname(__FILE__) . "/");
 // ルートパス
-define("BASEPATH", dirname(__FILE__) . "/");
+define("BASEPATH", "/mvc-poi/");
 
 spl_autoload_register(
     function ($class_name)
@@ -28,6 +28,8 @@ spl_autoload_register(
         }
     }
 );
+
+require_once('func.php');
 
 function show_404()
 {
