@@ -10,5 +10,7 @@ namespace Models;
 
 class Pages extends \Model
 {
-
+    function lul(){
+        echo "lul";
+    }
 }
