@@ -22,7 +22,8 @@ class Controller
     {
         $this->model_name = $name;
         require_once(APPPATH . "models/" . $path . ".php");
-        $this->$name = new $path();
+        $class = "\models\\".$path;
+        $this->$name = new $class();
         if($db){
             $this->load_database();
         }

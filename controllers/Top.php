@@ -6,7 +6,9 @@
  * Time: 2:46
  */
 
-class Top extends Controller
+namespace Controllers;
+
+class Top extends \Controller
 {
     public function view($page = 'home')
     {

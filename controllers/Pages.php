@@ -6,7 +6,9 @@
  * Time: 1:58
  */
 
-class Pages extends Controller
+namespace Controllers;
+
+class Pages extends \Controller
 {
     public function view($page = 'home')
     {
@@ -15,7 +17,7 @@ class Pages extends Controller
             show_404();
         }
         $data['title'] = ucfirst($page);
-        $this->load_model('test',"model",TRUE);
+        $this->load_model('Pages',"model",TRUE);
         $this->load_view('pages/' . $page, $data);
     }
 }

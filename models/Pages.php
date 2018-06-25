@@ -6,7 +6,9 @@
  * Time: 16:04
  */
 
-class test extends Model
+namespace Models;
+
+class Pages extends \Model
 {
 
 }

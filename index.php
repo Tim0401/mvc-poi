@@ -57,6 +57,7 @@ if (isset($_SERVER['PATH_INFO'])) {
 if (!file_exists(APPPATH . 'controllers/' . $controller . '.php')) {
     show_404();
 }
+$controller = "\Controllers\\".$controller;
 if (!class_exists($controller)) {
     show_404();
 }
