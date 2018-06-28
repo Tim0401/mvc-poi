@@ -8,7 +8,7 @@
 
 namespace Controllers;
 
-class Pages extends \Controller
+class Pages extends \Core\Controller
 {
     public function view($page = 'index')
     {
@@ -17,8 +17,6 @@ class Pages extends \Controller
             show_404();
         }
         $data['title'] = ucfirst($page);
-        $this->load_model('Pages',"model");
-        $this->model->lul();
         $this->load_view('pages/' . $page, $data);
     }
 }

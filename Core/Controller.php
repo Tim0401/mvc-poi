@@ -6,6 +6,8 @@
  * Time: 2:47
  */
 
+namespace Core;
+
 class Controller
 {
     protected $db;

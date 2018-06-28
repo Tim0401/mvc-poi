@@ -6,6 +6,8 @@
  * Time: 15:04
  */
 
+namespace Core;
+
 class Model
 {
     protected $database;

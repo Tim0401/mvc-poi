@@ -14,18 +14,8 @@ define("BASEPATH", "/mvc-poi/");
 spl_autoload_register(
     function ($class_name)
     {
-        $dirs = array(
-            '',
-            'controllers/'
-        );
-        foreach($dirs as $dir)
-        {
-            $file = APPPATH. $dir. '/'. $class_name. '.php';
-            if (file_exists($file)) {
-                require_once $file;
-                break;
-            }
-        }
+        $file = APPPATH .str_replace("\\", "/", $class_name) . ".php";
+        require_once($file);
     }
 );
 
@@ -50,9 +40,9 @@ if (isset($_SERVER['PATH_INFO'])) {
     $controller = ucfirst($path[count($path) - 3]);
 } else {
     // デフォルト設定
-    $view = "index";
+    $controller = "pages";
     $method = "view";
-    $controller = "Top";
+    $view = "index";
 }
 
 // controller読み込み

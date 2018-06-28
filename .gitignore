@@ -68,5 +68,7 @@ fabric.properties
 
 .DS_Store
 .idea
+*.mp4
+*.flv
 
 # End of https://www.gitignore.io/api/phpstorm

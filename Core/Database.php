@@ -6,6 +6,8 @@
  * Time: 15:10
  */
 
+namespace Core;
+
 class Database
 {
     function __construct($user_config) {

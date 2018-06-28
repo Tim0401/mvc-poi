@@ -8,7 +8,7 @@
 
 namespace Models;
 
-class Pages extends \Model
+class Pages extends \Core\Model
 {
     function lul(){
         echo "lul";
