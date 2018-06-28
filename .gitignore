@@ -70,5 +70,7 @@ fabric.properties
 .idea
 *.mp4
 *.flv
+*.ts
+*.m3u8
 
 # End of https://www.gitignore.io/api/phpstorm

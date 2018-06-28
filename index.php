@@ -10,6 +10,7 @@
 define("APPPATH", dirname(__FILE__) . "/");
 // ルートパス
 define("BASEPATH", "/mvc-poi/");
+define("MOVIEPATH", BASEPATH."asset/movie/");
 
 spl_autoload_register(
     function ($class_name)
